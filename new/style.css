@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.main {
+    background-image: url(mountains-190055_1280.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    height: 50px;
+    align-items: center;
+    display: flex;
+    padding: 0 20px;
+    
+}
+
+.navbar p {
+    margin-left: 50px; /* Add left margin between menu items */
+    cursor: pointer;
+    display: inline;
+    justify-content: flex-end;
+    margin-left: 20px;
+    align-items: end;
+    text-align: right;
+}
+
+.navbar p:first-child {
+    margin-left: 0; /* Remove margin for the first menu item */
+}
+
+.navbar p:hover {
+    color: blueviolet;
+}
+
+.herosec {
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    top: 30px;
+}
+
+.msg {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.msg2 {
+    font-size: 1rem;
+}
+
+.j {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: orange;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    top: 20px;
+}
+
+.j:hover {
+    background-color: #ffcc80;
+}
+
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 768px) {
+    .navbar {
+        height: auto;
+        justify-content: center; /* Center align items on smaller screens */
+    }
+
+    .navbar p {
+        margin: 10px; /* Adjust margin for menu items */
+    }
+
+    .navbar p:first-child {
+        margin-left: 0; /* Remove margin for the first menu item */
+    }
+
+    .herosec {
+        padding: 20px 10px;
+    }
+
+    .msg {
+        font-size: 1.2rem;
+    }
+
+    .msg2 {
+        font-size: 1rem;
+    }
+
+    .j {
+        padding: 8px 16px;
+    }
+}
